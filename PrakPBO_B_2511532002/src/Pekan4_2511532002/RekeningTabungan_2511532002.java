@@ -10,7 +10,7 @@ public class RekeningTabungan_2511532002 extends Rekening_2511532002{
 	}
 
 	public void tambahBungaAkhirBulan() {
-		double nominalBunga=saldo+(sukuBunga/100);
+		double nominalBunga=saldo*(sukuBunga/100);
 		saldo+=nominalBunga;
 		
 		String idTrx="TRX-B-" +System.currentTimeMillis();
